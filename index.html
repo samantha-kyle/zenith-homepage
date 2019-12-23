@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <title>Zenith</title>
 </head>
 <body>
     <nav class="nav">
-        <div class="nav__wrapper">
-            <div class="nav__logo-wrapper">
-                <img src="/assets/images/hero/zenith-logo.png" alt="logo" class="nav__logo-img">
+        <div class="container nav__wrapper">
+            <div class="nav-col">
+                <div class="nav__logo-wrapper">
+                    <img 
+                    src="/assets/images/hero/zenith-logo.png" 
+                    alt="logo" 
+                    class="nav__logo-img"
+                    >
+                </div>
             </div>
-            <div class="nav__menu-wrapper">
-                <img src="/assets/images/hero/hamburger.png" alt="hamburger">
+            <div class="nav-col nav-show-icon">
+                <div class="nav__menu-icon-wrapper">
+                    <span class="nav__menu-line nav__menu-line--long"></span>
+                    <span class="nav__menu-line nav__menu-line--short"></span>
+                </div>
+            </div>
+            <div class="nav-col nav-show-list">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                            <a href="#" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__list-item">
+                            <a href="#" class="nav__link">integrations</a>
+                    </li>
+                    <button class="nav__button" type="button">get zenith</button>
+                </ul>
             </div>
         </div>
     </nav>
+    <header class="hero">
+        <div class="hero__content container">
+            <h1 class="hero__heading">All your communication. <br/> One place.</h1>
+            <img class="hero__img" src="/assets/images/hero/inbound-card.png" />
+        </div>
+    </header>
 </body>
 </html>

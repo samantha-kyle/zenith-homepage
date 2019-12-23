@@ -1,0 +1,139 @@
+/* ----------- mobile styles ----------- */
+
+/* ----------- base ----------- */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+img {
+    width: 100%;
+}
+header, section {
+    margin-bottom: 120px;
+}
+h1 {
+    font-size: 1.75em;
+}
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+/* add in body, font, text and link styles */
+
+/* ----------- layout ----------- */
+.container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+.nav-col {
+    width: 50%;
+}
+
+.nav-show-list {
+    display: none;
+}
+.nav-show-icon {
+    display: block;
+}
+/* blocks */
+.nav {
+    position: fixed;
+    width: 100%;
+}
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+}
+.nav__logo-wrapper {
+    max-width: 140px;
+}
+.nav__menu-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nav__menu-line {
+    display: block;
+    margin: 3.5px 0;
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, rgb(171, 0, 255), rgb(0, 123, 255));
+}
+.nav__menu-line--short {
+    width: 22px;
+}
+.nav__menu-line--short:hover {
+    width: 30px;
+}
+.hero {
+    /* margin: 10px; */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url(/assets/images/backgrounds/hero-bg-cards.png), url(/assets/images/backgrounds/hero-bg-texture.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hero__content {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hero__img {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    max-width: 764px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, .25);
+}
+
+/* ----------- blocks ----------- */
+
+.nav__button {
+    background-image: linear-gradient(to left, rgb(171, 0, 255), rgb(0, 123, 255));
+    border-radius: 100px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+}
+
+/* ----------- desktop styles ----------- */
+
+@media (min-width: 600px) {
+/* layout */
+    .nav-show-icon {
+        display: none;
+    }
+    .nav-show-list {
+        display: block;
+    }
+/* blocks */
+    .nav__list {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .nav__list-item {
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 3em;
+    }
+} 
